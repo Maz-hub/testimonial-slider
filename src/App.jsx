@@ -1,34 +1,27 @@
 import { useState } from "react";
+import tanyaImg from "./src/assets/image-tanya.jpg";
+import johnImg from "./src/assets/image-john.jpg";
 
-import "./App.css";
+const testimonalData = [
+  {
+    quote:
+      "I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future.",
+    name: "Tanya Sinclair",
+    role: "UX Engineer",
+    image: tanyaImg,
+  },
+  {
+    quote:
+      "If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.",
+    name: "John Tarkpor",
+    role: "Junior Front-end Developer",
+    image: johnImg,
+  },
+];
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  );
+  const [currentIndex, setCurrentIndex] = useState(0);
+  return <></>;
 }
 
 export default App;
