@@ -1,6 +1,7 @@
 import { useState } from "react";
 import tanyaImg from "./assets/image-tanya.jpg";
 import johnImg from "./assets/image-john.jpg";
+import Testimonial from "./components/Testimonial.jsx";
 
 const testimonalData = [
   {
@@ -21,7 +22,32 @@ const testimonalData = [
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  return <></>;
+
+  // button increment the currentIndex
+  const handleNext = () => {
+    if (currentIndex === testimonalData.length - 1) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex((prev) => prev + 1);
+    }
+  };
+// button decrement the currentIndex
+  const handlePrev = () => {
+    if (currentIndex === 0) {
+      setCurrentIndex(testimonalData.length - 1)
+    } else {
+      setCurrentIndex((prev) => prev - 1);
+    }
+  };
+
+  return (
+    <>
+      <Testimonial testimonial={testimonalData[currentIndex]}
+      onNext={handleNext}
+      onPrev={handlePrev}
+      />
+    </>
+  );
 }
 
 export default App;
