@@ -1,0 +1,29 @@
+:root {
+    /* SPACING */
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-600: 48px;
+    --spacing-1200: 96px;
+
+    /* TYPOGRAPHY */
+    --font-light-32: 32px;
+    --font-bold-20: 20px;
+    --font-medium-20: 20px;
+    --font-light-18: 18px;
+    --font-bold-15: 15px;
+    --font-medium-15: 15px;
+
+    /* COLORS */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-grey-400: #B9B9CE;
+    --color-grey-100: #EBEBEB;
+    --color-grey-50: #F4F4FC;
+    --color-purple: #CF6BCB;
+    --color-pink: #D3629D;
+    --color-blue: #202047;
+    --gradient-main: linear-gradient(135deg, #9975D0 0%, #4A3FDB 100%);
+
+}
