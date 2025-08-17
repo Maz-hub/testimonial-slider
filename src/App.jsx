@@ -1,6 +1,6 @@
 import { useState } from "react";
-import tanyaImg from "./src/assets/image-tanya.jpg";
-import johnImg from "./src/assets/image-john.jpg";
+import tanyaImg from "./assets/image-tanya.jpg";
+import johnImg from "./assets/image-john.jpg";
 
 const testimonalData = [
   {
