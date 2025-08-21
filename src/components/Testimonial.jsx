@@ -27,22 +27,18 @@ const Testimonial = ({ testimonial, onNext, onPrev }) => {
             alt={`Photo of ${testimonial.name}`}
           />
           <img src={patternBg} alt="" className="testimonial__pattern-bg" />
-          <img
-            src={patternCurve}
-            alt=""
-            className="testimonial__pattern-curve"
-          />
-        </div>
-        {/* Buttons */}
-        <div className="testimonial__nav">
-          <button onClick={onPrev} className="btn_Prev">
-            <img src={prevIcon} alt="Previous" />
-          </button>
-          <button onClick={onNext} className="btn_Next">
-            <img src={nextIcon} alt="Next" />
-          </button>
+          {/* Buttons */}
+          <div className="testimonial__nav">
+            <button onClick={onPrev} className="btn_Prev">
+              <img src={prevIcon} alt="Previous" />
+            </button>
+            <button onClick={onNext} className="btn_Next">
+              <img src={nextIcon} alt="Next" />
+            </button>
+          </div>
         </div>
       </div>
+      <img src={patternCurve} alt="" className="testimonial__pattern-curve" />
     </>
   );
 };
