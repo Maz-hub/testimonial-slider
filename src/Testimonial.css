@@ -101,15 +101,13 @@
 /* Buttons */
 .testimonial__nav {
     position: absolute;
-    bottom: -28px;
-    /* Based on Figma: 28px under image */
-    left: 62px;
-    /* Based on Figma: 62px from left of image */
+    bottom: 38px;
+    left: 115px;
+
     width: 112px;
     height: 56px;
     background-color: white;
     border-radius: 999px;
-    /* Full pill */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,7 +116,6 @@
     z-index: 3;
 }
 
-/* Buttons (no background or border) */
 .testimonial__nav button {
     background: none;
     border: none;
@@ -126,8 +123,89 @@
     padding: 0;
 }
 
-/* Arrow Icons */
-.testimonial__nav img {
-    width: 16px;
-    height: 16px;
+/* Tablet Layout: 768px - 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .testimonial {
+        flex-direction: column;
+        padding: 4rem 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .testimonial__content {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        order: 2;
+    }
+
+    .testimonial__content img {
+        position: static;
+        margin: 0 auto 1rem;
+        display: block;
+        margin-top: 64.26px;
+    }
+
+
+
+    .testimonial__image-container {
+        width: 520px;
+        height: auto;
+        padding: 0;
+        margin-bottom: 65px;
+        margin-top: 24px;
+        position: relative;
+        order: 1;
+    }
+
+    .testimonial__image {
+        width: 100%;
+        width: 404.53px;
+        height: 402.94px;
+        max-width: 520px;
+        border-radius: 5px;
+        box-shadow: -10px 15px 25px rgba(0, 0, 0, 0.15);
+        display: block;
+        margin: 0 auto;
+        z-index: 1;
+    }
+
+    .testimonial__pattern-bg {
+        position: absolute;
+        top: -47px;
+        width: 520px;
+        height: 489.74px;
+        background-size: cover;
+        display: block;
+        z-index: 0;
+    }
+
+    .testimonial__nav {
+        position: absolute;
+        bottom: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 112px;
+        height: 56px;
+        background-color: white;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        z-index: 3;
+    }
+
+    .testimonial__text {
+        font-size: var(--font-light-32);
+        line-height: 1.5;
+        padding: 0 2rem;
+    }
+
+    .testimonial__author {
+        justify-content: center;
+        margin-top: var(--spacing-400);
+    }
 }
