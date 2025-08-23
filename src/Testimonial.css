@@ -147,8 +147,6 @@
         margin-top: 64.26px;
     }
 
-
-
     .testimonial__image-container {
         width: 520px;
         height: auto;
@@ -202,6 +200,7 @@
         font-size: var(--font-light-32);
         line-height: 1.5;
         padding: 0 2rem;
+        margin-top: -2.7rem
     }
 
     .testimonial__author {
